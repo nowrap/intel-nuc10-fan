@@ -13,7 +13,7 @@ Changes maintained here:
 - NUC10i5FNK / FNCML357 platform descriptor exposing the CPU fan only.
 - Registration and declaration of that descriptor in the existing framework.
 - Direct Python EC readout, optional Checkmk local check, their tests, and docs.
-- A complete GPLv2 license text and a Proxmox DKMS build script and workflow template.
+- A complete GPLv2 license text and a Proxmox DKMS build script and GitHub Actions workflow.
 
 The inherited module name `platform_fans_hwmon` and DKMS identity
 `platform-fans-hwmon/0.2.0` are deliberately retained for compatibility with

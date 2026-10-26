@@ -36,8 +36,8 @@ platform-fans-hwmon/0.2.0, 7.0.14-25-pve, x86_64: installed
   as the hardware-tested source package.
 - The new CI build script passed locally in a fresh Debian trixie-slim container:
   DKMS build, signing, installation and modinfo inspection on 7.0.14-25-pve.
-- The workflow template can repeat Python tests and a DKMS build with the
-  available Proxmox 7.0 headers after being enabled; it is not active on GitHub.
+- The GitHub Actions workflow runs Python tests and a DKMS build with the
+  available Proxmox 7.0 headers on pushes, pull requests and manual dispatch.
   A successful build is not a hardware test.
 
 ## Still unverified

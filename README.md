@@ -146,11 +146,9 @@ docker run --rm --mount "type=bind,source=$PWD,target=/src,readonly" \
   --workdir /src debian:trixie-slim bash ci/build-proxmox.sh
 ```
 
-A GitHub Actions workflow template is provided at [ci/github-actions.yml](ci/github-actions.yml).
-It runs the Python tests and builds/installs DKMS with the available Proxmox
-7.0 headers. To enable it, copy it into .github/workflows/check.yml and push
-using a GitHub login authorized for workflow updates. The current login lacks
-that permission, so the workflow is shipped as a template rather than enabled.
+[GitHub Actions](.github/workflows/check.yml) runs on pushes, pull requests
+and manual dispatch. It runs the Python tests and builds/installs DKMS with
+the available Proxmox 7.0 headers in an isolated Debian trixie container.
 
 The build does not load the module or prove support for additional hardware.
 
